@@ -46,6 +46,7 @@ const payload = JSON.stringify({
    */
 });
 
+//? subscritpion docs: https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription
 webpush
   .sendNotification(subscriptionD, payload)
   .catch((err) => console.error(err));

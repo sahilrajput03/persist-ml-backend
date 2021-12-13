@@ -40,14 +40,14 @@ app.post("/subscribe", async (req, res) => {
   // console.log(req);
   //get push subscription object from the request
   const subscription = req.body;
-  console.log("subscr", subscription);
+  // console.log("subscr", subscription);
 
   //send status 201 for the request
   res.status(201).json({});
 
   //create paylod: specified the detals of the push notification
   const payload = JSON.stringify({
-    title: "Section.io Push Notification1234",
+    title: "Today is too big!!!",
     body: "This is body sent from the server.",
     image: "img.jpg",
     icon: "img.jpg", // icon
